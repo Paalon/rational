@@ -7,33 +7,32 @@
 #define Rational_hpp
 
 class Rational {
+private:
+    int numarator;
+    int denominator;
 public:
-  Rational();
-  Rational(int numarator, int denominator);
+    Rational();
+    Rational(int numarator, int denominator);
 
-  Rational operator+(Rational r2);
-  Rational operator-(Rational r2);
-  Rational operator*(Rational r2);
-  Rational operator/(Rational r2);
-  Rational operator+=(Rational r2);
-  Rational operator-=(Rational r2);
-  Rational operator*=(Rational r2);
-  Rational operator/=(Rational r2);
-  Rational operator<(Rational r2);
-  Rational operator>(Rational r2);
-  Rational operator==(Rational r2);
-  Rational operator!=(Rational r2);
-  Rational operator<=(Rational r2);
-  Rational operator>=(Rational r2);
+    Rational operator+(Rational r2);
+    Rational operator-(Rational r2);
+    Rational operator*(Rational r2);
+    Rational operator/(Rational r2);
+    Rational operator+=(Rational r2);
+    Rational operator-=(Rational r2);
+    Rational operator*=(Rational r2);
+    Rational operator/=(Rational r2);
+    Rational operator<(Rational r2);
+    Rational operator>(Rational r2);
+    Rational operator==(Rational r2);
+    Rational operator!=(Rational r2);
+    Rational operator<=(Rational r2);
+    Rational operator>=(Rational r2);
 
-  void print();
-  int int_value();
-  float float_value();
-  double double_value();
-
-public:
-  int numarator;
-  int denominator;
+    void print();
+    int int_value();
+    float float_value();
+    double double_value();
 };
 
 #endif /* Rational.hpp */
