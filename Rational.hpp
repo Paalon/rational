@@ -1,0 +1,39 @@
+// 有理数計算ライブラリ
+// Rational Caliculation Light Library
+// Copyright 2017 Paalon
+// License MIT
+
+#ifndef Rational_hpp
+#define Rational_hpp
+
+class Rational {
+public:
+  Rational();
+  Rational(int numarator, int denominator);
+
+  Rational operator+(Rational r2);
+  Rational operator-(Rational r2);
+  Rational operator*(Rational r2);
+  Rational operator/(Rational r2);
+  Rational operator+=(Rational r2);
+  Rational operator-=(Rational r2);
+  Rational operator*=(Rational r2);
+  Rational operator/=(Rational r2);
+  Rational operator<(Rational r2);
+  Rational operator>(Rational r2);
+  Rational operator==(Rational r2);
+  Rational operator!=(Rational r2);
+  Rational operator<=(Rational r2);
+  Rational operator>=(Rational r2);
+
+  void print();
+  int int_value();
+  float float_value();
+  double double_value();
+
+public:
+  int numarator;
+  int denominator;
+};
+
+#endif /* Rational.hpp */
